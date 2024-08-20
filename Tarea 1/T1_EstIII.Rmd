@@ -28,7 +28,9 @@ knitr::opts_chunk$set(
 	warning = FALSE
 )
 #Cargamos nuestras librerías
-library(tidyverse)
+#devtools::install_github("FinYang/tsdl") # Descomentar para descargar los datos a usar
+library(tsdl)
+library(forecast)
 ```
 
 Analice la base de datos: Weekday bus ridership, Iowa city, Iowa (Monthly averages) September, 1971 through December, 1982, n = 148
