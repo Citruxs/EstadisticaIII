@@ -1,0 +1,82 @@
+---
+title: Estadística III - Modelos de supervivencia y de series de tiempo
+subtitle: Tarea 1 - Descomposición clásica y exponential smoothing
+author: |
+  | Johan Jesús González Navarrete
+  | Andrés Limón Cruz
+  | Leonardo Cuauhtémoc Mendoza Granillo
+  | Dereck Ariel Miguel Medrano
+date: "`r Sys.Date()`"
+output: 
+  bookdown::pdf_document2:
+    number_sections: no
+    toc: no
+    highlight: tango
+geometry: margin=2cm
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+#Limpiamos entorno
+rm(list = ls(all.names = TRUE))
+gc() #Liberamos memoria
+knitr::opts_chunk$set(
+	error = F,
+	fig.align = "center",
+	fig.dim = c(5, 3),
+	message = FALSE,
+	warning = FALSE
+)
+#Cargamos nuestras librerías
+library(tidyverse)
+```
+
+Analice la base de datos: Weekday bus ridership, Iowa city, Iowa (Monthly averages) September, 1971 through December, 1982, n = 148
+
+## 1.
+Grafique los datos. Describa lo que observe de su información (varianza constante ó no constante, tendencia, ciclo estacionales, periodicidad de los ciclos).
+Use distintos métodos de descomposición de las series para obtener sus componentes (tendencia y ciclos estacionales), en especifico realice los incisos (2) y (3):
+
+```{r}
+
+```
+
+
+## 2.
+Ajuste de curvas (modelos deterministas o de regresión).
+Realice un pronostico de 3 años futuros
+
+```{r}
+
+```
+
+## 3.
+Promedios móviles, filtros lineales o suavizamientos exponenciales.
+Realice un pronostico de 3 años futuros.
+
+```{r}
+
+```
+
+## 4.
+Aplique transformaciones y diferencias para: hacer la varianza constante, y para quitar tendencias y ciclos estacionales.
+
+```{r}
+
+```
+
+## 5.
+Use el método de Holt-Winters para el ajuste de la curva.
+Realice la predicción de 3 años futuros.
+
+```{r}
+
+```
+
+## 6.
+Compare resultados de las predicciones de (2), (3) y (5), y explique cuál podría dar un mejor ajuste (use algún criterio, por ejemplo el error cuadratico medio).
+
+```{r}
+
+```
+
